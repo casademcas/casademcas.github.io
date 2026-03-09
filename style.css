@@ -1,0 +1,92 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background: #1e1e1e;
+    font-family: Arial, sans-serif;
+    color: white;
+    padding: 20px;
+}
+
+.game-container {
+    display: flex;
+    gap: 40px;
+}
+
+.wheel-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wheel-container {
+    width: 90vw;  /* almost full width on mobile */
+    max-width: 400px;
+    height: 90vw;
+    max-height: 400px;
+}
+
+.wheel {
+    width: 100%;
+    height: 100%;
+    transform-origin: 50% 50%;
+}
+
+.pointer {
+    position: absolute;
+    top: 10px;
+    left: 39%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+}
+
+#spinButton {
+    padding: 15px 30px;
+    font-size: 20px;
+    background: #28a745;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    color: white;
+    margin-bottom: 20px;
+    padding: 20px 40px;
+    font-size: 22px;
+
+}
+
+.result p {
+    margin: 5px 0;
+}
+
+.legend {
+    background: #2c2c2c;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.legend h3 {
+    margin-bottom: 10px;
+}
+
+.legend ul {
+    list-style: none;
+    padding: 0;
+}
+
+.legend li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.color-box {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: 1px solid #fff;
+}
